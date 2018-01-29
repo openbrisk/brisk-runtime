@@ -4,26 +4,27 @@
 	using Microsoft.AspNetCore.Mvc;
 	using OpenBrisk.Runtime.Fetcher.Model;
 
+	[Route("fetcher/v1")]
 	public class FetcherController : Controller
-    {
-        [HttpPost("/")]
-        public IActionResult Fetch(FetchRequest request)
-        {
-            DateTime startTime = DateTime.UtcNow;
+	{
+		[HttpPost("/")]
+		public IActionResult Fetch(FetchRequest request)
+		{
+			DateTime startTime = DateTime.UtcNow;
 
 
 
-            return this.Ok();
-        }
+			return this.Ok();
+		}
 
-        [HttpPost("/upload")]
-        public IActionResult Upload() 
-        {
-            return this.Ok();
-        }
+		[HttpPost("/upload")]
+		public IActionResult Upload()
+		{
+			return this.Ok();
+		}
 
 
-        [HttpGet("/healthz")]
-        public IActionResult Health() => this.Ok();
-    }
+		[HttpGet("/healthz")]
+		public IActionResult Health() => this.Ok();
+	}
 }
