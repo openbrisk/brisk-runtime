@@ -6,6 +6,8 @@ The API and service definitions every runtime must implement.
 
 - `GET /runtime/v1`
 - `POST /runtime/v1`
+  - `application/json`
+  - `text/plain`
 - `GET /healthz`
 
 ## Server
