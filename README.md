@@ -19,9 +19,9 @@ The API and service definitions every runtime must implement.
 - The function timeout value (in seconds) is available via the environment variable `FUNCTION_TIMEOUT`
 - The code and references files are located in a mounted volume unter the path `/openbrisk/`
 
-## TODO
+## Integration Tests
 
-Create integration test suite that every runtime must pass.
+### TODO: Create integration test suite that every runtime must pass.
 
 - Execute syncronous GET function
 - Execute asynchonous GET function

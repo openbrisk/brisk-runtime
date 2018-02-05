@@ -1,0 +1,13 @@
+builder
+containerd
+containers
+image
+network
+overlay2
+plugins
+runtimes
+swarm
+tmp
+trust
+volumes
+.vscode
