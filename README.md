@@ -19,6 +19,18 @@ The API and service definitions every runtime must implement.
 - The function timeout value (in seconds) is available via the environment variable `FUNCTION_TIMEOUT`
 - The code and references files are located in a mounted volume unter the path `/openbrisk/`
 
+## Build Structure
+
+Every runtime implementation needs to have a `test` make target hat runs the current version 
+of the runtime server on port `8080`. A echo function with parameters (POST) must be
+loaded from the examples. The function will get the following data:
+
+```json
+{
+	"text": "Hello World!"
+}
+```
+
 ## Integration Tests
 
 ### TODO: Create integration test suite that every runtime must pass.
