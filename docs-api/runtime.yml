@@ -9,11 +9,11 @@ info:
     email: info@openbrisk.org
   license:
     name: MIT
-  basePath: /runtime/v1
+  basePath: /
   schemes:
     - http
   paths:
-    '/'
+    '/':
       get:
         summary: Invoke the function without parameters.
         produces:
@@ -55,6 +55,22 @@ info:
             description: Bad Request
           '500':
             description: Internal Function Error
+    '/stats':
+      get: 
+        summary: Get the function stats.
+        produces:
+          - application/json
+        responses:
+          '200':
+            description: OK
+          '500':
+            description: Internal Server Error
+    '/healthz':
+      get:
+        summary: The health check.
+      responses:
+        '200':
+          description: OK
 externalDocs:
-  description: OpenBrisk documentation available on GitHub.
-  url: https://github.com/openbrisk/brisk            
+  description: OpenBrisk runtime documentation available on GitHub.
+  url: https://github.com/openbrisk/brisk-runtime
