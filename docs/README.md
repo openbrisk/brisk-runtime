@@ -96,17 +96,17 @@ as an example.
 
 ```json
 {
-	"data": "Hello World!",
-	"headers": {
-		"Content-Type": "text/plain",
-		"X-OpenBrisk-Forwarded-From": "/{namespaceName}/{functionName}",
-	},
-	"env": {
-		"MODULE_NAME": "HelloWorld",
-		"FUNCTION_HANDLER": "Execute",
-		"FUNCTION_TIMEOUT": 10,
-		"PATH": "/bin:/usr/local/bin"
-	}
+  "data": "Hello World!",
+  "headers": {
+    "Content-Type": "text/plain",
+      "X-OpenBrisk-Forwarded-From": "/utils/to-base64",
+  },
+  "env": {
+    "MODULE_NAME": "HelloWorld",
+    "FUNCTION_HANDLER": "Execute",
+    "FUNCTION_TIMEOUT": 10,
+    "PATH": "/bin:/usr/local/bin"
+  }
 }
 ```
 
@@ -137,11 +137,11 @@ URL one must return a structure that matches the one below.
 
 ```json
 {
-	"result": "Hello World",
-	"forward": {
-		"type": "url",
-		"to": "https://requestb.in/1ai78f21"
-	}
+  "result": "Hello World",
+  "forward": {
+    "type": "url",
+      "to": "https://requestb.in/1ai78f21"
+  }
 }
 ```
 
@@ -150,11 +150,11 @@ you to see any inspect the incoming requests. A great tool, when developing webh
 
 ```json
 {
-	"result": "Hello World",
-	"forward": {
-		"type": "function",
-		"to": "/{namespaceName}/{functionName}"
-	}	
+  "result": "Hello World",
+  "forward": {
+    "type": "function",
+    "to": "/{namespaceName}/{functionName}"
+  }	
 }
 ```
 
