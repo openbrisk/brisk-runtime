@@ -22,11 +22,16 @@ info:
         responses:
           '200':
             description: OK
+            headers:
+              X-OpenBrisk-Forward:
+                description: Forward (POST) the function result to another endpoint.
+                schema:
+                  type: string
             examples:
               plain/text: Hallo Welt!
               application/json: |-
                 {
-                  "value": 500
+                  "value": 500,
                   "message": "Hallo Welt!"
                 }
           '400':
@@ -44,11 +49,16 @@ info:
         responses:
           '200':
             description: OK
+            headers:
+              X-OpenBrisk-Forward:
+                description: Forward (POST) the function result to another endpoint.
+                schema:
+                  type: string            
             examples:
               plain/text: Hallo Welt!
               application/json: |-
                 {
-                  "value": 500
+                  "value": 500,
                   "message": "Hallo Welt!"
                 }
           '400':
@@ -63,6 +73,16 @@ info:
         responses:
           '200':
             description: OK
+            examples: 
+              application/json: |-
+                {
+                  "runtime": {
+                    "name": "dotnetcore",
+                    "version": "v0.0.1",
+                    "moduleName": "HelloWorld",
+                    "functionHandler": "Execute"
+                  }
+                }
           '500':
             description: Internal Server Error
     '/healthz':
