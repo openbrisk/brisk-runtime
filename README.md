@@ -10,7 +10,7 @@ loaded from the examples. The function will get the following data:
 
 ```json
 {
-	"text": "Hello World!"
+    "text": "Hello World!"
 }
 ```
 
@@ -25,3 +25,17 @@ loaded from the examples. The function will get the following data:
 - Restore function dependencies when available
 - Kill function when timeout value is reached
 - Check if defined endpoints are available
+
+## Overview
+
+| Runtime   | Status | Server | Health | Function | Stats | Timeout | Deps | Forward | Hide Protocol |
+|-----------|:------:|:------:|:------:|:--------:|:-----:|:-------:|:----:|:-------:|:-------------:|
+| .NET Core |    O   |    +   |    +   |     +    |   -   |    +    |   +  |    -    |       +       |
+| Java      |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Go        |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Ruby      |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Python    |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| PHP       |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Node.js   |    O   |    +   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Perl      |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Binary    |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
