@@ -99,9 +99,9 @@ as an example.
   "data": "Hello World!",
   "headers": {
     "Content-Type": "text/plain",
-      "X-OpenBrisk-Forwarded-From": "/utils/to-base64",
+    "X-OpenBrisk-Forwarded-From": "/utils/to-base64",
   },
-  "env": {
+  "environment": {
     "MODULE_NAME": "HelloWorld",
     "FUNCTION_HANDLER": "Execute",
     "FUNCTION_TIMEOUT": 10,
