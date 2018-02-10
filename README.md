@@ -35,7 +35,6 @@ loaded from the examples. The function will get the following data:
 | Go        |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
 | Ruby      |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
 | Python    |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
-| PHP       |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| PHP       |    O   |    +   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
 | Node.js   |    O   |    +   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Perl      |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
 | Binary    |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
