@@ -31,10 +31,10 @@ loaded from the examples. The function will get the following data:
 | Runtime   | Status | Server | Health | Function | Stats | Timeout | Deps | Forward | Hide Protocol |
 |-----------|:------:|:------:|:------:|:--------:|:-----:|:-------:|:----:|:-------:|:-------------:|
 | .NET Core |    O   |    +   |    +   |     +    |   -   |    +    |   +  |    -    |       +       |
-| Java      |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Java      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
 | Go        |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Ruby      |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Python    |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
-| PHP       |    O   |    +   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Node.js   |    O   |    +   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Ruby      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Python    |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
+| PHP       |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Node.js   |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
 | Binary    |    -   |    -   |    -   |     -    |   -   |    -    |   -  |    -    |       -       |
