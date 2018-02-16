@@ -40,6 +40,8 @@ info:
                 }
           '400':
             description: Bad Request
+          '408':
+            description: Request Timeout
           '500':
             description: Internal Function Error
       post:
@@ -71,6 +73,8 @@ info:
                 }
           '400':
             description: Bad Request
+          '408':
+            description: Request Timeout            
           '500':
             description: Internal Function Error
     '/healthz':
