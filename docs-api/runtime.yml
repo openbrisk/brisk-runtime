@@ -27,6 +27,10 @@ info:
                 description: Forward (POST) the function result to another endpoint.
                 schema:
                   type: string
+              X-OpenBrisk-Duration:
+                  description: The duration of the function execution in nanoseconds.
+                  schema:
+                      type: int                   
             examples:
               plain/text: Hallo Welt!
               application/json: |-
@@ -53,7 +57,11 @@ info:
               X-OpenBrisk-Forward:
                 description: Forward (POST) the function result to another endpoint.
                 schema:
-                  type: string            
+                  type: string     
+              X-OpenBrisk-Duration:
+                  description: The duration of the function execution in nanoseconds.
+                  schema:
+                      type: int     
             examples:
               plain/text: Hallo Welt!
               application/json: |-
@@ -65,26 +73,6 @@ info:
             description: Bad Request
           '500':
             description: Internal Function Error
-    '/stats':
-      get: 
-        summary: Get the function stats.
-        produces:
-          - application/json
-        responses:
-          '200':
-            description: OK
-            examples: 
-              application/json: |-
-                {
-                  "runtime": {
-                    "name": "dotnetcore",
-                    "version": "v0.0.1",
-                    "moduleName": "HelloWorld",
-                    "functionHandler": "Execute"
-                  }
-                }
-          '500':
-            description: Internal Server Error
     '/healthz':
       get:
         summary: The health check.

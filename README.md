@@ -28,15 +28,21 @@ loaded from the examples. The function will get the following data:
 
 ## Overview
 
-| Runtime   | Status | Server | Health | Function | Stats | Timeout | Deps | Forward | Hide Protocol | Custom Context |
-|-----------|:------:|:------:|:------:|:--------:|:-----:|:-------:|:----:|:-------:|:-------------:|:---------------:
-| .NET Core |    O   |    +   |    +   |     +    |   -   |    +    |   +  |    -    |       +       |        -       |
-| Java      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
-| Go        |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
-| Ruby      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
-| Python    |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
-| PHP       |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
-| Node.js   |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
-| Binary    |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+| Runtime   | Status | Server | Health | Function | Duration | Timeout | Deps | Forward | Hide Protocol | Custom Context |
+|-----------|:------:|:------:|:------:|:--------:|:--------:|:-------:|:----:|:-------:|:-------------:|:---------------:
+| .NET Core |    O   |    +   |    +   |     +    |     -    |    +    |   +  |    -    |       +       |        -       |
+| Java      |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
+| Go        |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
+| Ruby      |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
+| Python    |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
+| PHP       |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
+| Node.js   |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
+| Binary    |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
 
 TODO: Version ENV
+
+## Custom Headers
+
+`X-OpenBrisk-Forward`
+
+`X-OpenBrisk-Duration`
