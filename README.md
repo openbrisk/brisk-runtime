@@ -48,7 +48,7 @@ loaded from the examples. The function will get the following data:
 | Python    |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
 | PHP       |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
 | Node.js   |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
-| Binary    |    O   |    +   |    +   |     +    |     +    |    +    |   +  |    -    |       +       |       N/A      |
+| Binary    |    O   |    +   |    +   |     +    |     +    |    +    |   +  |    +    |       +       |       N/A      |
 
 TODO: Version ENV?
 
