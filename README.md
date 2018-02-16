@@ -30,7 +30,7 @@ loaded from the examples. The function will get the following data:
 
 | Runtime   | Status | Server | Health | Function | Duration | Timeout | Deps | Forward | Hide Protocol | Custom Context |
 |-----------|:------:|:------:|:------:|:--------:|:--------:|:-------:|:----:|:-------:|:-------------:|:---------------:
-| .NET Core |    O   |    +   |    +   |     +    |     -    |    +    |   +  |    -    |       +       |        -       |
+| .NET Core |    O   |    +   |    +   |     +    |     +    |    +    |   +  |    +    |       +       |        -       |
 | Java      |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
 | Go        |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
 | Ruby      |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
