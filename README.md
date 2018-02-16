@@ -14,6 +14,17 @@ loaded from the examples. The function will get the following data:
 }
 ```
 
+## Forward Function Result Structure
+
+```json
+{
+    "result": "Hallo Welt!",
+    "forward": {
+        "to": "https://target.url/test"
+    }
+}
+```
+
 ## Integration Tests
 
 ### TODO: Create integration test suite that every runtime must pass
@@ -37,9 +48,9 @@ loaded from the examples. The function will get the following data:
 | Python    |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
 | PHP       |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
 | Node.js   |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
-| Binary    |    O   |    +   |    +   |     -    |     -    |    -    |   -  |    -    |       -       |        -       |
+| Binary    |    O   |    +   |    +   |     +    |     +    |    +    |   +  |    -    |       +       |       N/A      |
 
-TODO: Version ENV
+TODO: Version ENV?
 
 ## Custom Headers
 
