@@ -16,7 +16,7 @@ loaded from the examples. The function will get the following data:
 
 ## Integration Tests
 
-### TODO: Create integration test suite that every runtime must pass.
+### TODO: Create integration test suite that every runtime must pass
 
 - Execute syncronous GET function
 - Execute asynchonous GET function
@@ -28,13 +28,15 @@ loaded from the examples. The function will get the following data:
 
 ## Overview
 
-| Runtime   | Status | Server | Health | Function | Stats | Timeout | Deps | Forward | Hide Protocol |
-|-----------|:------:|:------:|:------:|:--------:|:-----:|:-------:|:----:|:-------:|:-------------:|
-| .NET Core |    O   |    +   |    +   |     +    |   -   |    +    |   +  |    -    |       +       |
-| Java      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Go        |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Ruby      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Python    |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
-| PHP       |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Node.js   |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
-| Binary    |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |
+| Runtime   | Status | Server | Health | Function | Stats | Timeout | Deps | Forward | Hide Protocol | Custom Context |
+|-----------|:------:|:------:|:------:|:--------:|:-----:|:-------:|:----:|:-------:|:-------------:|:---------------:
+| .NET Core |    O   |    +   |    +   |     +    |   -   |    +    |   +  |    -    |       +       |        -       |
+| Java      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+| Go        |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+| Ruby      |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+| Python    |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+| PHP       |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+| Node.js   |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+| Binary    |    O   |    +   |    +   |     -    |   -   |    -    |   -  |    -    |       -       |        -       |
+
+TODO: Version ENV
