@@ -44,18 +44,16 @@ The mandatory API is defined using swagger. The definition can be found in
 the file `docs-api/runtime.yml`. Every runtime must implement the API.
 
 - `GET /`
-	- Executes the function without content, but with the rest of the context.
+  - Executes the function without content, but with the rest of the context.
 - `POST /`
-	- Executes the function with the content. The content ca be one of the two types:
-		- `text/plain`
-		- `application/json`
-	- The `Content-Type` must be respected when creating the content, which ca be
-	  a simple string or a JSON formatted structure.
+  - Executes the function with the content. The content ca be one of the two types:
+    - `text/plain`
+    - `application/json`
+  - The `Content-Type` must be respected when creating the content, which ca be a simple string or a JSON formatte structure.
 - `GET /healthz`
-	- This just returns 200 OK for the Kubernetes Pod health check.
+  - This just returns 200 OK for the Kubernetes Pod health check.
 - `GET /stats`
-	- This returns a stats structure which collects several informations about
-	  the running server. For now this only provides infos about the runtime.
+  - This returns a stats structure which collects several informations about the running server. For now this only provides infos about the runtime.
 
 ## Function Definition
 
