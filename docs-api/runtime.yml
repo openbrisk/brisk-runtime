@@ -52,6 +52,8 @@ info:
         produces:
           - plain/text
           - application/json
+          - schema:
+            $ref: '#/definitions/FunctionResult'
         responses:
           '200':
             description: OK
@@ -83,6 +85,19 @@ info:
       responses:
         '200':
           description: OK
+definitions:          
+  FunctionResult:
+    type: object
+    required:
+      - result
+    properties:
+      result:
+        type: string
+        description: The return value of the function.
+      forward:
+        type: string
+        format: url
+        description: (Optional) A url where the result of the function is posted to.
 externalDocs:
   description: OpenBrisk runtime documentation available on GitHub.
   url: https://github.com/openbrisk/brisk-runtime

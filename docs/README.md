@@ -52,8 +52,6 @@ the file `docs-api/runtime.yml`. Every runtime must implement the API.
   - The `Content-Type` must be respected when creating the content, which ca be a simple string or a JSON formatte structure.
 - `GET /healthz`
   - This just returns 200 OK for the Kubernetes Pod health check.
-- `GET /stats`
-  - This returns a stats structure which collects several informations about the running server. For now this only provides infos about the runtime.
 
 ## Function Definition
 
@@ -62,8 +60,7 @@ inside the container in a mounted volume unter the path `/openbrisk/`.
 
 ## Environment Variables
 
-The following environment variables are available in the container for the
-runtime.
+The following environment variables are available in the container for the runtime.
 
 - `MODULE_NAME`
 	- The name of the functions module. This can vary between languages. The .NET 
@@ -78,7 +75,7 @@ runtime.
 	- The name of the file containing the functions dependencies. The .NET runtime
 	  f.e will try to restore the packges from a file named `${FUNCTION_DEPENDENCIES}.csproj`
 - `FUNCTION_TIMEOUT`
-	- The functions runtime timeoout in seconds.
+	- The function runtime timeout in seconds.
 
 ## Function Handler Definition
 
@@ -136,10 +133,7 @@ URL one must return a structure that matches the one below.
 ```json
 {
   "result": "Hello World",
-  "forward": {
-    "type": "url",
-      "to": "https://requestb.in/1ai78f21"
-  }
+  "forward": "https://requestb.in/1ai78f21"
 }
 ```
 
@@ -149,10 +143,7 @@ you to see any inspect the incoming requests. A great tool, when developing webh
 ```json
 {
   "result": "Hello World",
-  "forward": {
-    "type": "function",
-    "to": "/{namespaceName}/{functionName}"
-  }	
+  "forward":"/{namespaceName}/{functionName}"
 }
 ```
 
