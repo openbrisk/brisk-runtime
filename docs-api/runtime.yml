@@ -28,9 +28,9 @@ info:
                 schema:
                   type: string
               X-OpenBrisk-Duration:
-                  description: The duration of the function execution in nanoseconds.
-                  schema:
-                      type: int                   
+                description: The duration of the function execution in nanoseconds.
+                schema:
+                  type: int                   
             examples:
               plain/text: Hallo Welt!
               application/json: |-
@@ -63,9 +63,9 @@ info:
                 schema:
                   type: string     
               X-OpenBrisk-Duration:
-                  description: The duration of the function execution in nanoseconds.
-                  schema:
-                      type: int     
+                description: The duration of the function execution in nanoseconds.
+                schema:
+                  type: int     
             examples:
               plain/text: Hallo Welt!
               application/json: |-
